@@ -22,7 +22,7 @@
     width: 100%;
     margin: 0 auto;
     max-width: 1040px;
-    border:2px solid red;
+
 }
 
 .clearfix:after {
@@ -79,11 +79,11 @@
     margin-left:-13px;
     margin-right:-13px;
     position: relative;
-    border: 1px solid green;
+
 }
 
 .row .col-1-3 {
-    width:33.3333%;
+    width:33.33%;
     float:left;
     padding:0 13px;
 }
@@ -91,7 +91,17 @@
 .row .col2-1-3 {
     width: 33.3333%;
     float: left;
-    padding:0 13px;
+    text-align: center;
+
+
+
+}
+
+.row .col2-1-3x {
+    width: 33.3333%;
+    float: left;
+    text-align: center;
+
 }
 /* -------------------------------------------- */
 /* layout */
@@ -307,31 +317,72 @@ body {
 
 .header1 {
     color: #24BAA0;
+    margin-top: 30px;
 }
 
 .header2 {
     color: white;
+    margin-top: 30px;
 }
 
 
-
-.body {
+.col2-1-3 {
     background-color: white;
     border: 2px solid lightgrey;
     text-align: center;
     border-radius: 3px;
+    position: relative;
 }
 
 .col2-1-3x {
-    width: 33.33%;
-    height: 220px;
-    float: left;
     background-color: #24BAA0;
     border: 2px solid #24BAA0;
     text-align: center;
     border-radius: 3px;
+    position: relative;
 
 }
+
+.box {
+
+}
+/*------------kółka------------------*/
+
+.col2-1-3 .circleA {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid lightgrey;
+    position: absolute;
+    top: -28px;
+    left: 155px;
+
+}
+
+.col2-1-3 .circleB {
+    width: 22px;
+    height:22px;
+    border-radius: 50%;
+    background-color:lightgrey ;
+    position: absolute;
+    top: -19px;
+    left: 164px;
+
+}
+
+.col2-1-3x .circleAx {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    border: 9px solid #24BAA0;
+    position: absolute;
+    top: -28px;
+    left: 155px;
+
+}
+
 
 .col2-1-3 h2  {
     text-transform: uppercase;
@@ -353,8 +404,19 @@ body {
     border-radius: 50%;
     text-align: center;
     margin-left: 130px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 15px;
+
+}
+
+.circle-pricex {
+    background-color: white;
+    border: 2px solid white;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 130px;
+    margin-top: 15px;
 }
 
 .price-point {
@@ -370,6 +432,19 @@ body {
     font-weight: 900;
 }
 
+.circle-pricex p {
+    color: #bfbfbf;
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.col2-1-3 ul {
+    margin-top: 15px;
+}
+
+.col2-1-3x ul {
+    margin-top: 15px;
+}
 .col2-1-3 li {
     background-color:#f2f2f2 ;
     line-height: 26px;
@@ -410,6 +485,8 @@ body {
     padding:5px;
     width: 80px;
     border-radius: 6px;
+    margin-top: 18px;
+    margin-bottom: 7px;
 
 
 }
@@ -423,7 +500,23 @@ body {
     padding:5px;
     width: 80px;
     border-radius: 6px;
+    margin-top: 43px;
+    margin-bottom: 7px;
 
+}
+
+.btn1x {
+    font-family: Raleway, sans-serif;
+    display: inline-block;
+    text-transform: uppercase;
+    color: white;
+    background: #24BAA0;
+    border: 0;
+    padding: 5px;
+    width: 80px;
+    border-radius: 6px;
+    margin-top: 69px;
+    margin-bottom: 7px;
 }
 
 /* -------------------------------------------- */
@@ -496,4 +589,6 @@ body {
     background: url(../images/form_ok.jpg);
     background-repeat: no-repeat;
     background-position:center center;
-}}
+}
+
+
