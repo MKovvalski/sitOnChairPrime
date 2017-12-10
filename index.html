@@ -7,13 +7,214 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,800&amp;subset=latin-ext">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+<header class="main-header">
+    <div class="container clearfix">
+        <h1 class="main-logo">
+            <a href="">
+                Sit <span>on</span> chair
+            </a>
+        </h1>
+        <nav class="main-nav">
+            <ul>
+                <li>
+                    <a href="">O firmie</a>
+                    <ul class="main-nav-submenu">
+                        <li><a href="">Aktualności</a></li>
+                        <li><a href="">Nasz team</a></li>
+                        <li><a href="">Historia</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Galeria</a></li>
+                <li><a href="">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+</header><!-- e: main-header -->
 
 
-    <script src="js/scripts.js"></script>
+<div class="main-banner-bg">
+    <div class="container">
+
+        <div class="main-slider" id="mainSlider">
+            <button class="main-slider-prev">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </button>
+            <button class="main-slider-next">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </button>
+
+            <div class="main-slider-slides-cnt">
+
+                <div class="main-slider-slide active">
+                    <h2>slide 1</h2>
+                </div>
+                <div class="main-slider-slide">
+                    <h2>slide 2</h2>
+                </div>
+                <div class="main-slider-slide">
+                    <h2>slide 3</h2>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div><!-- e: main-banner-bg -->
+
+
+<div class="main-articles">
+    <div class="container">
+        <h2 class="visuallyhidden">
+            Artykuły
+        </h2>
+
+        <div class="row clearfix">
+            <div class="col-1-3">
+
+                <a href="" class="article-box">
+                    <img src="./images/box1_img.jpg" alt="">
+                    <div class="article-box-description">
+                        <h2 class="title">Chiar CLAIR</h2>
+                        <div class="article-box-description-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt totam omnis alias incidunt officiis tempore itaque similique quisquam nisi cumque exercitationem corporis iusto, quis, aliquam libero labore dolor quos adipisci.
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+            <div class="col-1-3">
+
+                <a href="" class="article-box">
+                    <img src="./images/box1_img.jpg" alt="">
+                    <div class="article-box-description">
+                        <h2 class="title">Chiar MARGERITA</h2>
+                        <div class="article-box-description-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt totam omnis alias incidunt officiis tempore itaque similique quisquam nisi cumque exercitationem corporis iusto, quis, aliquam libero labore dolor quos adipisci.
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+            <div class="col-1-3">
+
+                <a href="" class="article-box active">
+                    <img src="./images/box1_img.jpg" alt="">
+                    <div class="article-box-description">
+                        <h2 class="title">Lorem ipsum</h2>
+                        <div class="article-box-description-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt totam omnis alias incidunt officiis tempore itaque similique quisquam nisi cumque exercitationem corporis iusto, quis, aliquam libero labore dolor quos adipisci.
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div><!-- e: main-articles -->
+
+<div class="main-prices">
+    <div class="container">
+        <h2 class="title">cennik
+        </h2>
+
+        <div class="row clearfix">
+                <div class="col2-1-3"> <!-- pierwszy -->
+                <h2 class="header1">basic plan</h2>
+                <div class="price-month">85<br>PLN/MONTH</div>
+                <ul class="spec-list">
+                    <li>zakup towaru + dowóz</li>
+                    <li>serwis</li>
+
+                </ul>
+                    <button type="submit" class="btn">dołącz</button>
+                </div>
+
+                <div class="col2-1-3x"> <!-- środkowy -->
+                    <h2 class="header2">basic plan</h2>
+                    <div class="price-month">85<br>PLN/MONTH</div>
+                    <ul class="spec-list">
+                        <li>zakup towaru + dowóz</li>
+                        <li>serwis</li>
+                        <li>Gwarancja 5lat</li>
+
+                    </ul>
+                    <button type="submit" class="btn2">dołącz</button>
+                </div>
+
+                <div class="col2-1-3"><!-- ostatni -->
+                    <h2 class="header1">basic plan</h2>
+                    <div class="price-month">85<br>PLN/MONTH</div>
+                    <ul class="spec-list">
+                        <li>zakup towaru + dowóz</li>
+                        <li>serwis</li>
+                        <li>Gwarancja5lat</li>
+                        <li>Porady projektanta</li>
+
+                    </ul>
+                    <button type="submit" class="btn">dołącz</button>
+                </div>
+        </div>
+    </div>
+
+
+
+</div> <!-- e: main-prices -->
+
+
+<div class="main-contact">
+    <div class="container">
+        <h2 class="title">
+            Kontakt
+        </h2>
+
+        <form action="" method="" class="main-contact-form clearfix">
+            <div class="main-contact-form-left">
+                <div class="main-contact-form-row">
+                    <label for="formName" class="visuallyhidden">Imię</label>
+                    <input type="text" id="formName" name="name" placeholder="Imię">
+                </div>
+                <div class="main-contact-form-row">
+                    <label for="formEmail" class="visuallyhidden">Email</label>
+                    <input type="email" id="formEmail" name="email" placeholder="Email">
+                </div>
+                <div class="main-contact-form-row">
+                    <label for="formMessage" class="visuallyhidden">Wiadomość</label>
+                    <textarea id="formMessage" name="message" placeholder="Wiadomość"></textarea>
+                </div>
+            </div>
+            <div class="main-contact-form-right">
+
+                <div class="main-contact-form-addon"></div>
+                <div class="main-contact-form-row">
+                    <label class="checkbox-cnt">
+                        <input type="checkbox">
+                        <span class="checkbox-mark"></span>
+                        Zgadzam się na przetwarzanie danych osobowych
+                    </label>
+                </div>
+
+                <button type="submit" class="btn">Wyślij</button>
+            </div>
+        </form>
+    </div>
+</div><!-- e: main-contact -->
+
+<script>
+    var arr = document.querySelectorAll('.article-box');
+    for (var i=0; i<arr.length; i++) {
+        arr[i].addEventListener('click', function(e) {
+            e.preventDefault();
+            this.classList.toggle('active');
+        })
+    }
+</script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
