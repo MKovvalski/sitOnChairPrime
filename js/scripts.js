@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var buttonNext = document.querySelector(".main-slider-next");
     var arrayOfChairs = document.querySelectorAll(".slide");
 
-
+    console.log(arrayOfChairs);
     console.log(buttonNext);
     console.log(buttonPrev);
 
@@ -29,15 +29,13 @@ document.addEventListener("DOMContentLoaded", function () {
    buttonNext.addEventListener("click",function () {
       arrayOfChairs[counter].style.display= "none";
       counter++;
-      //
-      // if (counter === 1) {
-      //     console.log("1");
-      //     arrayOfChairs[counter].style.display = "none";
-      //     arrayOfChairs[0].style.display = "inline-block";
-      //     counter = 0;
-      // }
-          arrayOfChairs[counter].style.display = "inline-block";
+      arrayOfChairs[counter].style.display = "inline-block";
 
+       if (counter === 1) {  // działa do tyłu ale nie działa do przodu. Po przejściu na obrazek 1 nie jest wstanie przejść dalej
+           arrayOfChairs[counter].style.display = "none";
+           arrayOfChairs[0].style.display = "inline-block";
+           counter = 0;
+       }
    });
 
     buttonPrev.addEventListener("click", function () {
