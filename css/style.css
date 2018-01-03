@@ -80,6 +80,7 @@
     margin-right:-13px;
     position: relative;
 
+
 }
 
 .row .col-1-3 {
@@ -580,4 +581,47 @@ body {
     background-position:center center;
 }
 
+
+/* -------------------------------------------- */
+/* footer */
+/* -------------------------------------------- */
+
+
+.col-1 {
+    float: left;
+    margin-bottom: 40px;
+}
+
+.col-2 {
+    float: right;
+    width: 360px;
+}
+
+.copyrights {
+    color: #bfbfbf;
+    margin-top: 20px;
+
+}
+
+.in-touch-icons p {
+    float: right;
+    margin: 20px;
+    text-transform: uppercase;
+    color: #bfbfbf;
+    font-weight: 600;
+}
+
+.in-touch-icons p span {
+    font-weight: 600;
+    color: #666666;
+}
+
+.icon-list {
+    float: left;
+    margin-top: 12px;
+}
+
+.icon-list li {
+    float: left;
+}
 
