@@ -2,6 +2,9 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
+    // - wyskakujące opisy ------------//
+
+
     var arr = document.querySelectorAll('.article-box');
     for (var i=0; i<arr.length; i++) {
         arr[i].addEventListener('click', function(e) {
@@ -9,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
             this.classList.toggle('active');
         })
     }
+
+    // slider ---------------------- //
 
 
     var buttonPrev = document.querySelector(".main-slider-prev");
@@ -31,11 +36,11 @@ document.addEventListener("DOMContentLoaded", function () {
       counter++;
       arrayOfChairs[counter].style.display = "inline-block";
 
-       if (counter === 1) {  // działa do tyłu ale nie działa do przodu. Po przejściu na obrazek 1 nie jest wstanie przejść dalej
-           arrayOfChairs[counter].style.display = "none";
-           arrayOfChairs[0].style.display = "inline-block";
-           counter = 0;
-       }
+       // if (counter === 2) {  // działa do tyłu ale nie działa do przodu. Po przejściu na obrazek 1 nie jest wstanie przejść dalej
+       //     arrayOfChairs[counter].style.display = "none";
+       //     arrayOfChairs[0].style.display = "inline-block";
+       //     counter = 0;
+       // }
    });
 
     buttonPrev.addEventListener("click", function () {
@@ -49,6 +54,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
        arrayOfChairs[counter].style.display= "inline-block";
 
-    })
+    });
+
+
+//    wyskakujące menu ------------------ //
+
+
+
+    var submenu1 = document.querySelector(".main-nav-submenu");
+
+    var hiddenmenu = document.querySelector(".hiddenMenu");
+
+    console.log(hiddenmenu);
+
+
+    hiddenmenu.addEventListener("mouseover", function () {
+        submenu1.style.display="block";
+    });
+
+    hiddenmenu.addEventListener("mouseout", function () {
+      submenu1.style.display="none";
+    });
 
 });

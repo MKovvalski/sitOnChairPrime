@@ -147,15 +147,11 @@ body {
     position: absolute;
     left:50%;
     top:55px;
+    display: none;
     transform: translate(-50%, 0);
-    opacity:0;
-    visibility:hidden;
     transition: 0.5s all;
 }
-.main-nav li:hover .main-nav-submenu {
-    opacity:1;
-    visibility:visible;
-}
+
 .main-nav-submenu:before {
     position: absolute;
     left:50%;
@@ -253,7 +249,7 @@ body {
 .red-chair-img {
     float:left;
     margin-top: 90px;
-    margin-left: 60px;
+    margin-left: 32px;
 }
 
 .black-chair-img {
@@ -293,7 +289,7 @@ body {
     color:#fff;
     background:#24BAA0;
     border:0;
-    padding: 7px 14px 7px 14px;
+    padding: 7px 22px 7px 22px;
     border-radius: 5px;
     margin-top: 20px;
 
