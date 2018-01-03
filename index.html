@@ -11,9 +11,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="./js/scripts.js"></script>
 </head>
 
 <body>
+
+
 <header class="main-header">
     <div class="container clearfix">
         <h1 class="main-logo">
@@ -49,19 +52,33 @@
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
             </button>
 
-            <div class="main-slider-slides-cnt">
+            <div class="moving-divs">
+                <div class="slide slide-1">
+                    <img src="./images/red_chair.png">
+                    <div class="text-n-button">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, placeat?
+                    </div>
 
-                <div class="main-slider-slide active">
-                    <h2>slide 1</h2>
                 </div>
-                <div class="main-slider-slide">
-                    <h2>slide 2</h2>
-                </div>
-                <div class="main-slider-slide">
-                    <h2>slide 3</h2>
+
+                <div class="slide slide-2">
+                    <img src="./images/black_chair.png">
                 </div>
 
             </div>
+            <!--<div class="main-slider-slides-cnt">-->
+
+                <!--<div class="main-slider-slide active">-->
+                    <!--<h2>slide 1</h2>-->
+                <!--</div>-->
+                <!--<div class="main-slider-slide">-->
+                    <!--<h2>slide 2</h2>-->
+                <!--</div>-->
+                <!--<div class="main-slider-slide">-->
+                    <!--<h2>slide 3</h2>-->
+                <!--</div>-->
+
+            <!--</div>-->
         </div>
 
     </div>
@@ -232,6 +249,7 @@
     </div>
 </div><!-- e: main-contact -->
 
+
 <div class="main-footer">
     <div class="container">
             <div class="col-1">
@@ -252,19 +270,8 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div><!-- e: footer -->
 
-</div><!-- e: footer -->
 
-<script>
-    var arr = document.querySelectorAll('.article-box');
-    for (var i=0; i<arr.length; i++) {
-        arr[i].addEventListener('click', function(e) {
-            e.preventDefault();
-            this.classList.toggle('active');
-        })
-    }
-</script>
-<script src="js/scripts.js"></script>
 </body>
 </html>
