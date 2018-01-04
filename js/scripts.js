@@ -34,13 +34,12 @@ document.addEventListener("DOMContentLoaded", function () {
    buttonNext.addEventListener("click",function () {
       arrayOfChairs[counter].style.display= "none";
       counter++;
-      arrayOfChairs[counter].style.display = "inline-block";
-
-       // if (counter === 2) {  // działa do tyłu ale nie działa do przodu. Po przejściu na obrazek 1 nie jest wstanie przejść dalej
-       //     arrayOfChairs[counter].style.display = "none";
-       //     arrayOfChairs[0].style.display = "inline-block";
-       //     counter = 0;
-       // }
+       if (counter >= 2 ) {
+           counter = 0;
+           arrayOfChairs[counter].style.display = "inline-block";
+       } else {
+           arrayOfChairs[counter].style.display = "inline-block";
+       }
    });
 
     buttonPrev.addEventListener("click", function () {
