@@ -480,16 +480,15 @@ body {
 }
 
 .price-box ul {
-    margin-top: 15px;
+    margin-top: 28px;
 }
 
 .price-boxx ul {
-    margin-top: 15px;
+    margin-top: 28px;
 }
 .price-box li {
     background-color:#f2f2f2 ;
     line-height: 26px;
-
 }
 
 .price-boxx li {
@@ -529,7 +528,6 @@ body {
     margin-top: 18px;
     margin-bottom: 7px;
 
-
 }
 .btn2 {
     font-family: Raleway, sans-serif;
@@ -541,9 +539,8 @@ body {
     padding:5px;
     width: 80px;
     border-radius: 6px;
-    margin-top: 43px;
+    margin-top: 53px;
     margin-bottom: 7px;
-
 }
 
 .btn1x {
@@ -556,13 +553,18 @@ body {
     padding: 5px;
     width: 80px;
     border-radius: 6px;
-    margin-top: 69px;
+    margin-top: 89px;
     margin-bottom: 7px;
 }
 
 .spec-list {
     font-size: 19px;
 }
+
+.spec-list li {
+    padding: 5px 0 5px 0;
+}
+
 /* -------------------------------------------- */
 /* main contact */
 /* -------------------------------------------- */
