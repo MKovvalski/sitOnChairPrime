@@ -56,8 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-//    wyskakujące menu ------------------ //
-
+    //    wyskakujące menu ------------------ //
 
 
     var submenu1 = document.querySelector(".main-nav-submenu");
@@ -75,4 +74,58 @@ document.addEventListener("DOMContentLoaded", function () {
       submenu1.style.display="none";
     });
 
+
+    //    kalkulator ceny  ------------------ //
+
+
+    var listOfArrows = document.querySelectorAll(".list_arrow");
+    var listOfLists = document.querySelectorAll(".list_panel");
+
+
+    console.log(listOfArrows);
+    console.log(listOfLists);
+
+
+    //    -----  otwieranie i zamykanie pól wyboru ----- ///
+
+
+    listOfArrows[0].addEventListener("click", function () {
+        if (listOfLists[0].style.display === "block") {
+            listOfLists[0].style.display = "none";
+        } else {
+            listOfLists[0].style.display = "block";
+        }
+        if (listOfLists[0].style.display === "block") {
+            listOfLists[1].style.display = "none";
+            listOfLists[2].style.display = "none";
+        }
+    });
+
+
+    listOfArrows[1].addEventListener("click", function () {
+        if (listOfLists[1].style.display === "block") {
+            listOfLists[1].style.display = "none";
+        } else {
+            listOfLists[1].style.display = "block";
+        }
+        if (listOfLists[1].style.display === "block") {
+            listOfLists[0].style.display = "none";
+            listOfLists[2].style.display = "none";
+        }
+    });
+
+
+    listOfArrows[2].addEventListener("click", function () {
+        if (listOfLists[2].style.display === "block") {
+            listOfLists[2].style.display = "none";
+        } else {
+            listOfLists[2].style.display = "block";
+        }
+        if (listOfLists[2].style.display === "block") {
+            listOfLists[0].style.display = "none";
+            listOfLists[1].style.display = "none";
+        }
+    });
+
 });
+
