@@ -88,15 +88,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //    -----  otwieranie i zamykanie pól wyboru ----- ///
 
-    // for (var i = 0; i < listOfArrows.length; i++) {
-    //     listOfArrows[i].addEventListener("click", function () {
-    //       if (this.nextElementSibling.style.display === "none") {
-    //           this.style.display = "block";
-    //       } else {
-    //           this.style.display = "none";
-    //       }
-    //     })
-    // }
 
     listOfArrows[0].addEventListener("click", function () {
         if (listOfLists[0].style.display === "block") {
@@ -164,8 +155,16 @@ document.addEventListener("DOMContentLoaded", function () {
     var transportPrice = document.querySelector(".transport-value");
 
 
+//    wyszukiwanie sumy elementów -- ///
+
+
+    var sumOfPrices = document.querySelector(".sum_number");
+    console.log(sumOfPrices);
+
+
 //    tworzenie eventów dla list -- ///
 
+    var sum = 0; //założenie zmienianej sumy
 
     // event dla krzeseł -- //
     for (var i = 0; i < chairs.length; i++) { // nowa wersja - pozwala "odkliknąć wcześniej zaznacozne krzesło //
@@ -206,7 +205,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     chairPrice.innerHTML = "250";
                 }
             }
-
+            var chairParse = parseInt(patternPrice.innerHTML, 10);
         })
     }
 
@@ -226,28 +225,38 @@ document.addEventListener("DOMContentLoaded", function () {
                 choiceOfColor.innerHTML = this.innerHTML;
                 colorPrice.innerHTML = 100;
             }
+            var colorParse = parseInt(choiceOfColor.innerHTML, 10);
         })
     }
+
 
     // event dla tkanin -- //
     for (var i = 0; i < patterns.length; i++) {
         patterns[i].addEventListener("click", function () {
+            sum -= parseInt(patternPrice.innerHTML); // wyzór wykonania obliczenia końcowego !!!!
             if (this.innerHTML === "Tkanina") {
                 choiceOfPattern.innerHTML = this.innerHTML;
-                patternPrice.innerHTML = 80;
+                patternPrice.innerHTML = "80";
             }
             if (this.innerHTML === "Skóra") {
                 choiceOfPattern.innerHTML = this.innerHTML;
-                patternPrice.innerHTML = 80;
+                patternPrice.innerHTML = "90";
             }
+            sum += parseInt(patternPrice.innerHTML);
+            sumOfPrices.innerHTML = sum;
         })
     }
+
 
     // event dla transportu -- //
     transport.addEventListener("click", function () {
         choiceOfTransport.innerHTML = "Transport";
         transportPrice.innerHTML = "80";
-    })
+    });
+
+
+    // event dla sumy -- //
+
 
 });
 
