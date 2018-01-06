@@ -137,12 +137,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-//    wyszukanie elementów list -- ///
+//    wyszukanie elementów list + przycisk -- ///
 
 
     var chairs = document.querySelectorAll(".chairs li");
     var colors = document.querySelectorAll(".colors li");
     var patterns = document.querySelectorAll(".materials li");
+    var transport = document.querySelector(".checkbox");
 
 
 //    wyszukiwanie elementów rachunku -- ///
@@ -151,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var choiceOfChair = document.querySelector(".title-in-form");
     var choiceOfColor = document.querySelector(".color");
     var choiceOfPattern = document.querySelector(".pattern");
-    var chocieOfTransport = document.querySelector(".transport");
+    var choiceOfTransport = document.querySelector(".transport");
 
 
 //    wyszukiwanie cen elementów rachunku -- ///
@@ -166,24 +167,51 @@ document.addEventListener("DOMContentLoaded", function () {
 //    tworzenie eventów dla list -- ///
 
 
-    for (var i = 0; i < chairs.length; i++) {
+    // event dla krzeseł -- //
+    for (var i = 0; i < chairs.length; i++) { // nowa wersja - pozwala "odkliknąć wcześniej zaznacozne krzesło //
         chairs[i].addEventListener("click", function () {
             if (this.innerHTML === "Clair") {
-                choiceOfChair.innerHTML = this.innerHTML;
-                chairPrice.innerHTML = 200;
+                if (choiceOfChair.innerHTML === this.innerHTML) {
+                    choiceOfChair.innerHTML = "";
+                } else {
+                    choiceOfChair.innerHTML = this.innerHTML
+                }
+                if (chairPrice.innerHTML === "200") {
+                    chairPrice.innerHTML = "0";
+                } else {
+                    chairPrice.innerHTML = "200";
+                }
             }
             if (this.innerHTML === "Margarita") {
-                choiceOfChair.innerHTML = this.innerHTML;
-                chairPrice.innerHTML = 250;
+                if (choiceOfChair.innerHTML === this.innerHTML) {
+                    choiceOfChair.innerHTML = "";
+                } else {
+                    choiceOfChair.innerHTML = this.innerHTML
+                }
+                if (chairPrice.innerHTML === "300") {
+                    chairPrice.innerHTML = "0";
+                } else {
+                    chairPrice.innerHTML = "300";
+                }
             }
             if (this.innerHTML === "Selena") {
-                choiceOfChair.innerHTML = this.innerHTML;
-                chairPrice.innerHTML = 300;
+                if (choiceOfChair.innerHTML === this.innerHTML) {
+                    choiceOfChair.innerHTML = "";
+                } else {
+                    choiceOfChair.innerHTML = this.innerHTML
+                }
+                if (chairPrice.innerHTML === "250") {
+                    chairPrice.innerHTML = "0";
+                } else {
+                    chairPrice.innerHTML = "250";
+                }
             }
+
         })
     }
 
 
+    // event dla kolorów -- //
     for (var i = 0; i <colors.length; i++) {
         colors[i].addEventListener("click", function () {
             if (this.innerHTML === "Czerwony") {
@@ -201,7 +229,7 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     }
 
-
+    // event dla tkanin -- //
     for (var i = 0; i < patterns.length; i++) {
         patterns[i].addEventListener("click", function () {
             if (this.innerHTML === "Tkanina") {
@@ -215,6 +243,11 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     }
 
+    // event dla transportu -- //
+    transport.addEventListener("click", function () {
+        choiceOfTransport.innerHTML = "Transport";
+        transportPrice.innerHTML = "80";
+    })
 
 });
 

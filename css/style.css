@@ -704,6 +704,7 @@ body {
     border-radius: 8px;
     text-decoration: none;
 }
+
 .panel_left {
     display: inline-block;
     width: 185px;
@@ -795,6 +796,8 @@ body {
 .title {
     height: 30px;
 }
+
+
 /* -------------------------------------------- */
 /* main contact */
 /* -------------------------------------------- */
