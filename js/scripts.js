@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var sum = 0; //założenie zmienianej sumy
 
     // event dla krzeseł -- //
-    for (var i = 0; i < chairs.length; i++) { // nowa wersja - pozwala "odkliknąć wcześniej zaznacozne krzesło //
+    for (var i = 0; i < chairs.length; i++) {
         chairs[i].addEventListener("click", function () {
             sum -= parseInt(chairPrice.innerHTML);
             if (this.innerHTML === "Clair") {
@@ -265,7 +265,7 @@ document.addEventListener("DOMContentLoaded", function () {
         patterns[i].addEventListener("click", function () {
             sum -= parseInt(patternPrice.innerHTML);
             if (this.innerHTML === "Tkanina") {
-                if (choiceOfPattern.innerHTML = this.innerHTML) {
+                if (choiceOfPattern.innerHTML === this.innerHTML) {
                     choiceOfPattern.innerHTML = "";
             } else {
                     choiceOfPattern.innerHTML = this.innerHTML;
@@ -277,7 +277,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
             if (this.innerHTML === "Skóra") {
-                if (choiceOfPattern.innerHTML = this.innerHTML) {
+                if (choiceOfPattern.innerHTML === this.innerHTML) {
                     choiceOfPattern.innerHTML = "";
                 } else {
                     choiceOfPattern.innerHTML = this.innerHTML;

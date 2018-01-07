@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df723a89-867f-4771-a6b3-d4dd8a262de1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/scripts.js" afterPath="$PROJECT_DIR$/js/scripts.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,8 +20,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1086">
-              <caret line="351" column="0" lean-forward="true" selection-start-line="351" selection-start-column="0" selection-end-line="351" selection-end-column="0" />
+            <state relative-caret-position="413">
+              <caret line="243" column="32" lean-forward="false" selection-start-line="243" selection-start-column="32" selection-end-line="243" selection-end-column="39" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -41,8 +40,8 @@
       <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="313" column="0" lean-forward="true" selection-start-line="313" selection-start-column="0" selection-end-line="313" selection-end-column="0" />
+            <state relative-caret-position="372">
+              <caret line="279" column="49" lean-forward="false" selection-start-line="279" selection-start-column="49" selection-end-line="279" selection-end-column="49" />
               <folding>
                 <element signature="e#3255#3368#0" expanded="false" />
               </folding>
@@ -193,12 +192,12 @@
       <workItem from="1515140420846" duration="1925000" />
       <workItem from="1515144667163" duration="621000" />
       <workItem from="1515160517390" duration="600000" />
-      <workItem from="1515235296899" duration="12654000" />
+      <workItem from="1515235296899" duration="13109000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82540000" />
+    <option name="totallyTimeSpent" value="82995000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -680,8 +679,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1086">
-          <caret line="351" column="0" lean-forward="true" selection-start-line="351" selection-start-column="0" selection-end-line="351" selection-end-column="0" />
+        <state relative-caret-position="413">
+          <caret line="243" column="32" lean-forward="false" selection-start-line="243" selection-start-column="32" selection-end-line="243" selection-end-column="39" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -698,8 +697,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="313" column="0" lean-forward="true" selection-start-line="313" selection-start-column="0" selection-end-line="313" selection-end-column="0" />
+        <state relative-caret-position="372">
+          <caret line="279" column="49" lean-forward="false" selection-start-line="279" selection-start-column="49" selection-end-line="279" selection-end-column="49" />
           <folding>
             <element signature="e#3255#3368#0" expanded="false" />
           </folding>
