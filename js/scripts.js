@@ -134,7 +134,9 @@ document.addEventListener("DOMContentLoaded", function () {
     var chairs = document.querySelectorAll(".chairs li");
     var colors = document.querySelectorAll(".colors li");
     var patterns = document.querySelectorAll(".materials li");
-    var transport = document.querySelector(".checkbox");
+    var transport = document.querySelector("#transport");
+    console.log("d");
+    console.log(transport);
 
 
 //    wyszukiwanie elementów rachunku -- ///
@@ -169,6 +171,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // event dla krzeseł -- //
     for (var i = 0; i < chairs.length; i++) { // nowa wersja - pozwala "odkliknąć wcześniej zaznacozne krzesło //
         chairs[i].addEventListener("click", function () {
+            sum -= parseInt(chairPrice.innerHTML);
             if (this.innerHTML === "Clair") {
                 if (choiceOfChair.innerHTML === this.innerHTML) {
                     choiceOfChair.innerHTML = "";
@@ -205,7 +208,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     chairPrice.innerHTML = "250";
                 }
             }
-            var chairParse = parseInt(patternPrice.innerHTML, 10);
+            sum += parseInt(chairPrice.innerHTML);
+            sumOfPrices.innerHTML = sum;
         })
     }
 
@@ -213,19 +217,45 @@ document.addEventListener("DOMContentLoaded", function () {
     // event dla kolorów -- //
     for (var i = 0; i <colors.length; i++) {
         colors[i].addEventListener("click", function () {
+            sum -= parseInt(colorPrice.innerHTML);
             if (this.innerHTML === "Czerwony") {
-                choiceOfColor.innerHTML = this.innerHTML;
-                colorPrice.innerHTML = 80;
+                if (choiceOfColor.innerHTML === this.innerHTML) {
+                    choiceOfColor.innerHTML = "";
+                } else {
+                    choiceOfColor.innerHTML = this.innerHTML;
+                }
+                if (colorPrice.innerHTML === "80") {
+                    colorPrice.innerHTML = "0";
+                } else {
+                    colorPrice.innerHTML = "80";
+                }
             }
             if (this.innerHTML === "Czarny") {
-                choiceOfColor.innerHTML = this.innerHTML;
-                colorPrice.innerHTML = 90;
+                if (choiceOfColor.innerHTML === this.innerHTML) {
+                    choiceOfColor.innerHTML = "";
+                } else {
+                    choiceOfColor.innerHTML = this.innerHTML;
+                }
+                if (colorPrice.innerHTML === "90") {
+                    colorPrice.innerHTML = "0";
+                } else {
+                    colorPrice.innerHTML = "90";
+                }
             }
             if (this.innerHTML === "Pomarańczowy") {
-                choiceOfColor.innerHTML = this.innerHTML;
-                colorPrice.innerHTML = 100;
+                if (choiceOfColor.innerHTML === this.innerHTML) {
+                    choiceOfColor.innerHTML = "";
+                } else {
+                    choiceOfColor.innerHTML = this.innerHTML;
+                }
+                if (colorPrice.innerHTML === "100") {
+                    colorPrice.innerHTML = "0";
+                } else {
+                    colorPrice.innerHTML = "100";
+                }
             }
-            var colorParse = parseInt(choiceOfColor.innerHTML, 10);
+            sum += parseInt(colorPrice.innerHTML);
+            sumOfPrices.innerHTML = sum;
         })
     }
 
@@ -233,14 +263,30 @@ document.addEventListener("DOMContentLoaded", function () {
     // event dla tkanin -- //
     for (var i = 0; i < patterns.length; i++) {
         patterns[i].addEventListener("click", function () {
-            sum -= parseInt(patternPrice.innerHTML); // wyzór wykonania obliczenia końcowego !!!!
+            sum -= parseInt(patternPrice.innerHTML);
             if (this.innerHTML === "Tkanina") {
-                choiceOfPattern.innerHTML = this.innerHTML;
-                patternPrice.innerHTML = "80";
+                if (choiceOfPattern.innerHTML = this.innerHTML) {
+                    choiceOfPattern.innerHTML = "";
+            } else {
+                    choiceOfPattern.innerHTML = this.innerHTML;
+                }
+                if (patternPrice.innerHTML === "80") {
+                    patternPrice.innerHTML = "0";
+                } else {
+                    patternPrice.innerHTML = "80";
+                }
             }
             if (this.innerHTML === "Skóra") {
-                choiceOfPattern.innerHTML = this.innerHTML;
-                patternPrice.innerHTML = "90";
+                if (choiceOfPattern.innerHTML = this.innerHTML) {
+                    choiceOfPattern.innerHTML = "";
+                } else {
+                    choiceOfPattern.innerHTML = this.innerHTML;
+                }
+                if (patternPrice.innerHTML === "90") {
+                    patternPrice.innerHTML = "0";
+                } else {
+                    patternPrice.innerHTML = "90";
+                }
             }
             sum += parseInt(patternPrice.innerHTML);
             sumOfPrices.innerHTML = sum;
@@ -250,8 +296,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // event dla transportu -- //
     transport.addEventListener("click", function () {
-        choiceOfTransport.innerHTML = "Transport";
-        transportPrice.innerHTML = "80";
+        sum -= parseInt(transportPrice.innerHTML);
+       if (transport.checked === true) {
+           choiceOfTransport.innerHTML = "Transport";
+           transportPrice.innerHTML = "80";
+       } else {
+           choiceOfTransport.innerHTML = "";
+           transportPrice.innerHTML = "0";
+       }
+        sum += parseInt(transportPrice.innerHTML);
+        sumOfPrices.innerHTML = sum;
     });
 
 
